@@ -8,11 +8,11 @@ if [ -n "$TRAVIS" ]; then
     sudo apt-get install socat
 
     #python libs
-    sudo pip install redis
-    sudo pip install nose
+    sudo pip3 install redis
+    sudo pip3 install nose
 
-    sudo pip install git+https://github.com/andymccurdy/redis-py.git@2.10.3
-    sudo pip install git+https://github.com/idning/python-memcached.git#egg=memcache
+    sudo pip3 install git+https://github.com/andymccurdy/redis-py.git@2.10.3
+    sudo pip3 install git+https://github.com/idning/python-memcached.git#egg=memcache
 fi 
 
 #build twemproxy
